@@ -1,1 +1,6 @@
-*/
+__pychace__/
+.benchmarks/
+.pytest_cache/
+.vscode/
+build/
+output/
