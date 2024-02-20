@@ -1,0 +1,62 @@
+arr = [5, 8, 1, 2, 6, 3, 9]
+arr = [5, 3, 1, 2, 6, 8, 9]
+arr = [2, 3, 1, 5, 6, 8, 9]
+
+arr[0] = 5, 2
+arr[1] = 8, 3
+arr[2] = 1          i = 1, 2, 3, 4
+arr[3] = 2, 5       j = 6, 5, 4, 3
+arr[4] = 6
+arr[5] = 3, 8
+arr[6] = 9
+
+high = 6
+low = 0
+
+main loop:
+
+
+pivot = arr[low]
+pivot = 5, 3
+
+i = low+1  
+i = 1
+
+j = high
+j = 6
+
+first loop:
+
+1<=6 True		1<=5 True           2<=5 True
+arr[i]= 8<=5 False	arr[1] = 3<=5 True  arr[2] = 1<=5 True
+
+3<=5 True		4<=5 True
+arr[3] = 2<=5 True	arr[4] = 6<=5 False
+
+seond loop:
+
+1<=6 True           1<=5 True
+arr[6] = 9>=5 True  arr[5] = 3>=5 False
+j-=1 j = 6-1 = 5
+j = 5
+
+4<=5 True	    4<=4 True   4<=3 False
+arr[4] = 6>=5 True  6>=5 True 
+
+
+
+If Statement
+1<=5            4<=3 False
+
+arr[1] = arr[5]
+arr[5] = arr[1]
+
+
+end loop
+
+low = 0, j = 3
+arr[0] = arr[3]
+arr[3] = arr[0]
+
+
+
